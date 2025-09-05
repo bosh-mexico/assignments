@@ -1,0 +1,45 @@
+Requirement -> code
+
+             solution (best way at that moment)
+
+            working code
+
+ROI , Metric
+
+Quality parameters
+
+ Audit : guidelines /standards - MISRA,AutoCer
+
+Maintainability
+
+    Easy To Understand- people : Congnitive Complexity
+
+                                                    Comment
+
+                                                   Cyclomatic Complexity
+
+                                                   On Boarding Time
+
+
+
+    Design Pattern - Quick Solution
+
+              Unit                      Testing                   
+
+            function                  Debug (Arrange Act Assert)         BUG     TestCoverage
+
+
+
+Unit Testing
+
+     Technical Difficulty : Test via public interface
+
+             Measurement Points and Determinism
+
+             Black/thick metal/Bric Box -   functionName , input and output ( Interface)
+
+            
+
+              Pair Programming 
+
+              White/glass Box. - Everything (Implementation)
