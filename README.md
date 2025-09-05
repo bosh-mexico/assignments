@@ -1,4 +1,4 @@
-# assignments
+# Assignments
 # Habits for productivity and reliability
 
 This is an experiential learning experience - Concepts with live coding sessions
@@ -11,19 +11,7 @@ This is an experiential learning experience - Concepts with live coding sessions
 
 ## Try It
 
-[Paradigms to tackle complexity](paradigms.md)
-
-[Fail on false positive](fail.md)
-
-[Refactor](VitalMonitoRefactor.md)
-
 [Modularity](modularity.md)
-
-[Legacy Code](Extension.md)
-
-[TDD](tdd.md)
-
-
 
 ## References
 
@@ -70,5 +58,4 @@ to have in-cranium before you can make progress
 
 ---
 ## Assignment Tracker
-https://docs.google.com/spreadsheets/d/1exXna4nuv2klFaq-e3EdRgmFGV_fDvhDtndV1Me9vkg/edit?usp=sharing
-
+https://docs.google.com/spreadsheets/d/17nKZfyxoQ4ovXPnM-Lo-NdRaN4VTgJNZ4nlvwZVJilM/edit?usp=sharing
