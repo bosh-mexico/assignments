@@ -15,8 +15,7 @@ This is an experiential learning experience - Concepts with live coding sessions
 
 [Fail on false positive](fail.md)
 
-
-[Refactor(VitalMonitorRefactor.md)
+[Refactor](VitalMonitorRefactor.md)
 
 
 ## References
