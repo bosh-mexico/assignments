@@ -43,3 +43,32 @@ Unit Testing
               Pair Programming 
 
               White/glass Box. - Everything (Implementation)
+
+Day2
+LOC = 50
+
+monolithic
+
+    Modularity - files
+
+.h  
+
+.c
+
+.cpp
+
+.py
+
+.java
+
+.js
+
+FAT INTERFACE
+
+YAGNI
+
+Single Responsibility Principle
+
+Legacy Code = Code without SafetyNet (Test Cases)
+
+
