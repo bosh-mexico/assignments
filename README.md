@@ -17,6 +17,8 @@ This is an experiential learning experience - Concepts with live coding sessions
 
 [Refactor](VitalMonitorRefactor.md)
 
+[Extensibility](OCP.md)
+
 
 ## References
 
