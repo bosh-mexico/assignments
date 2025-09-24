@@ -1,0 +1,4 @@
+Parametric Polymorphism
+Object Oriented Paradigm : Abstraction , Polymorphism , Inheritance , Encapsualtion, interface , composition ,aggregation , assoication, Substitutuion , Shadowing , Overrding
+Functional Programming Paradigm : function object , closures, high ordered functions , Unions, function curry..pure functions
+Programming Language : support building blocks to implement paradigm concepts
