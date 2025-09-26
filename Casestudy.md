@@ -88,3 +88,92 @@ The Vehicle Speed Governor ensures that vehicles do not exceed a pre-set maximum
 - GPS-based variable speed limits (e.g., 30 km/h in city zones, 80 km/h on highways).
 - Cloud integration for fleet monitoring.
 - AI-based driver behavior analytics.
+- 
+
+```
+using System;
+
+namespace VehicleSpeedGovernor
+{
+    // 🚨 God Class: Handles everything in one place
+    public class VehicleSpeedGovernor
+    {
+        // Configurable threshold
+        private int speedThreshold;
+
+        // Vehicle State
+        private int currentSpeed;
+        private bool isGovernorActive;
+
+        // Constructor
+        public VehicleSpeedGovernor(int initialThreshold)
+        {
+            speedThreshold = initialThreshold;
+            currentSpeed = 0;
+            isGovernorActive = false;
+        }
+
+        // Configure threshold (via secure tool / interface)
+        public void SetSpeedThreshold(int threshold)
+        {
+            if (threshold <= 0)
+            {
+                Console.WriteLine("Invalid threshold!");
+                return;
+            }
+            speedThreshold = threshold;
+            Console.WriteLine($"[CONFIG] Threshold set to {speedThreshold} km/h");
+        }
+
+        // Simulate reading vehicle speed (from ECU/OBD-II)
+        public void UpdateVehicleSpeed(int newSpeed)
+        {
+            currentSpeed = newSpeed;
+            Console.WriteLine($"[DATA] Vehicle speed updated: {currentSpeed} km/h");
+            CheckAndEnforceSpeedLimit();
+        }
+
+        // Core logic: Enforce speed limit
+        private void CheckAndEnforceSpeedLimit()
+        {
+            if (currentSpeed > speedThreshold)
+            {
+                isGovernorActive = true;
+                OverrideAcceleration();
+                ProvideDriverFeedback();
+                LogEvent();
+            }
+            else
+            {
+                isGovernorActive = false;
+            }
+        }
+
+        // Interface with ECU/throttle
+        private void OverrideAcceleration()
+        {
+            Console.WriteLine("[ECU] Acceleration overridden to maintain threshold.");
+        }
+
+        // Driver feedback
+        private void ProvideDriverFeedback()
+        {
+            Console.WriteLine("[ALERT] Speed limit reached!");
+            Console.Beep();
+        }
+
+        // Logging events
+        private void LogEvent()
+        {
+            Console.WriteLine($"[LOG] Governor activated at speed {currentSpeed} km/h (Threshold: {speedThreshold})");
+        }
+
+        // Utility: Show system status
+        public void ShowStatus()
+        {
+            Console.WriteLine($"[STATUS] Current Speed: {currentSpeed}, Threshold: {speedThreshold}, Governor Active: {isGovernorActive}");
+        }
+    }
+}
+
+```
